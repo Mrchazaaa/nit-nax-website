@@ -1,48 +1,49 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">NitNax</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarColor01"
-      aria-controls="navbarColor01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav>
+  <v-card
+    color="primary"
+    flat
+    tile
+  >
+    <v-toolbar dense color="primary" class="white--text">
+      
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
-            Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <v-toolbar-title>NitNax</v-toolbar-title>
+
+      <div class="flex-grow-1"></div>
+
+      <v-btn icon>
+        <v-icon color="white">mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon color="white">mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon color="white">mdi-dots-vertical</v-icon>
+      </v-btn>
+
+      <v-app-bar-nav-icon color="white" @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+    </v-toolbar>
+  </v-card>
+  <v-navigation-drawer v-model="drawer" app class="indigo">
+    <p>test</p>
+  </v-navigation-drawer>
+</nav>
 </template>
 
 <script>
 export default {
-  name: 'Navbar'
-}
+  name: "Navbar",
+  data() {
+    return {
+      drawer: false
+    }
+  }
+};
 </script>
 
 <style>
-.navbar {
-    padding: 8px 50px !important;
-}
 </style>

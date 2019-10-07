@@ -1,31 +1,27 @@
 <template>
-  <div id="app">
+  <v-app>
     <Navbar/>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <ContentContainer/>
-  </div>
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import ContentContainer from './components/ContentContainer.vue';
-import Navbar from './components/Navbar.vue';
+import HelloWorld from './components/HelloWorld';
+import Navbar from './components/Navbar';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    ContentContainer,
-    Navbar
-  }
-}
+    HelloWorld,
+    Navbar,
+  },
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <style>
-@import 'assets/css/bootstrap.min.css';
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 </style>
