@@ -1,9 +1,45 @@
 <template>
-  <nav>
-    <v-card color="primary" flat tile>
-      <v-toolbar :height="100" dense color="primary" class="white--text d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarColor01"
+      aria-controls="navbarColor01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <v-toolbar-title><h1>NitNax</h1></v-toolbar-title>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Workshops</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- 
+<v-toolbar-title>
+          <h1>NitNax</h1>
+        </v-toolbar-title>
 
         <div class="flex-grow-1"></div>
 
@@ -17,16 +53,8 @@
           <v-btn text>WorkShops</v-btn>
 
           <v-btn text>Contact</v-btn>
-        </v-toolbar-items>
+        </v-toolbar-items> -->
 
-        <!-- <v-app-bar-nav-icon class="hidden-md-and-up" color="white" @click="drawer = !drawer"></v-app-bar-nav-icon> -->
-
-      </v-toolbar>
-    </v-card>
-    <!-- <v-navigation-drawer v-model="drawer" app class="indigo">
-      <p>test</p>
-    </v-navigation-drawer> -->
-  </nav>
 </template>
 
 <script>
@@ -48,7 +76,7 @@ h1 {
   /* margin: 10px 60px !important; */
   font-size: 64px;
 }
-.v-toolbar{
+.v-toolbar {
   /* height: 100px !important; */
   padding: 0 60px;
 }

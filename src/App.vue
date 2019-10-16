@@ -1,10 +1,8 @@
 <template>
-  <v-app>
+  <div>
     <Navbar/>
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+    <HelloWorld/>
+  </div>
 </template>
 
 <script>
@@ -18,7 +16,7 @@ export default {
     Navbar,
   },
   data: () => ({
-    //
+    
   }),
 };
 </script>
