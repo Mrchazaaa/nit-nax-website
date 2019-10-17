@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div id="top">
     <Navbar/>
-    <HelloWorld/>
+    <Content/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Content from './components/Content';
 import Navbar from './components/Navbar';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Content,
     Navbar,
   },
   data: () => ({
@@ -22,4 +22,7 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 </style>
