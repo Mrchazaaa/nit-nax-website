@@ -22,7 +22,8 @@ export default {
 </script>
 
 <style>
-html {
+body, html {
+  background-color: #E8E8E8;
   scroll-behavior: smooth;
 }
 </style>

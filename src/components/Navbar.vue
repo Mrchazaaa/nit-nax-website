@@ -39,15 +39,10 @@
 <script>
 export default {
   name: "Navbar",
-  data() {
-    return {
-      drawer: false
-    };
-  }
 };
 </script>
 
-<style>
+<style scoped>
 @media screen and (min-width: 992px) {
   #mobile-nav {
     display: none;

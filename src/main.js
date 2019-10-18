@@ -4,6 +4,9 @@ import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/assets/css/bootstrap.min.css';
 
+// import jQuery from 'jquery';
+// window.$ = window.jQuery = jQuery;
+
 Vue.config.productionTip = false
 
 new Vue({
