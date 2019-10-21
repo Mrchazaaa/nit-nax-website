@@ -54,6 +54,6 @@ export default {
   background-image: url("../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
 }
 #workshops {
-  background-image: url("../assets/ursula-castillo-aLfHUE8o5Xc-unsplash.jpg");
+  background-image: url("../assets/jean-marc-vieregge-cDKqFb-NOZc-unsplash.jpg");
 }
 </style>
