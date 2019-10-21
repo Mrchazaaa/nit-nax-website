@@ -1,33 +1,25 @@
 <template>
   <div class="content-section container-fluid" id="home">
-    <div class="row" style="height: 100%">
-      <div class="col-12 col-md-5" style="padding: 0px;">
-        <div id="pink-blob">
-          <!-- <h1>Winter Sale</h1> -->
-          <h1>Winter<br/>Sale</h1>
-          <p>Handcrafted & stylish</p>
-          <button type="button" class="btn btn-primary btn-lg">Shop</button>
-        </div>
+    <div class="col-12 col-lg-5" style="padding: 0px;">
+      <div id="pink-blob">
+        <h1>
+          Winter
+          <br />Sale
+        </h1>
+        <p>Handcrafted & stylish</p>
+        <button type="button" class="btn btn-primary btn-lg">Shop</button>
       </div>
-      <div id="showcase" class="col-7"></div>
     </div>
+    <div id="showcase" class="col-7"></div>
   </div>
 </template>
 
 <script>
-console.log("importing fittext");
-import "@/jquery.fittext.js";
-
 export default {
-  name: "TitlePage",
+  name: "TitleSection",
   mounted: () => {
     $("#pink-blob").css({ left: -$("#pink-blob").width() }, 350);
     $("#pink-blob").animate({ left: "0px" }, 725);
-
-    // $("#pink-blob h1").fitText(0.6);
-    $("#pink-blob h1").fitText();
-    // $("#pink-blob p").fitText(0.6);
-    $("#pink-blob p").fitText();
   }
 };
 </script>
@@ -48,13 +40,15 @@ export default {
     display: none;
   }
   #pink-blob {
-    background-image: url("../assets/vectorpaint.svg") !important;
-    background-position: center;
+    background-image: url("../assets/pink.svg") !important;
+    background-position: center !important;
     background-repeat: no-repeat;
     background-size: contain !important;
-    margin-top: 32px;
     margin-left: 30px;
     margin-right: 30px;
+    height: calc(100% - 60px) !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 #home {
@@ -63,25 +57,28 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 !important;
+  padding-top: 64px !important;
   text-align: center;
+  box-sizing: border-box;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  display: flex;
+  justify-content: center;
 }
 h1 {
   font-family: "Kaushan Script", cursive !important;
   color: white;
-  width: 100%;
-  height: 20%;
-  text-align: center; 
+  text-align: center;
+  font-size: 6vmax;
 }
 p {
   color: white;
-  width: 80%;
+  font-size: 2vmax;
 }
 button {
   min-width: 120px;
-  width: 40%;
 }
 #pink-blob {
-  /* padding-top: 175px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,14 +88,7 @@ button {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../assets/vectorpaint2.svg");
-  opacity: 0.8;
-}
-.row {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  display: flex;
-  justify-content: center;
+  background-image: url("../assets/pinkOffset.svg");
 }
 #showcase {
   padding: 0;
