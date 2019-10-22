@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Gallery from './Gallery.vue';
+import Gallery from '../Gallery.vue';
 
 export default {
   name: "ShopSection",
@@ -31,7 +31,7 @@ export default {
 <style scoped>
 
 #shop {
-  background-image: url("../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
+  background-image: url("../../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
   display: flex;
   padding: 20px 30px;
 }

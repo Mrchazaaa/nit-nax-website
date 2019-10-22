@@ -40,7 +40,7 @@ export default {
     display: none;
   }
   #pink-blob {
-    background-image: url("../assets/pink.svg") !important;
+    background-image: url("../../assets/pink.svg") !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: contain !important;
@@ -52,7 +52,7 @@ export default {
   }
 }
 #home {
-  background-image: url("../assets/victoria-bilsborough-nLNimOqmbpg-unsplash.jpg");
+  background-image: url("../../assets/victoria-bilsborough-nLNimOqmbpg-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,7 @@ button {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../assets/pinkOffset.svg");
+  background-image: url("../../assets/pinkOffset.svg");
 }
 #showcase {
   padding: 0;

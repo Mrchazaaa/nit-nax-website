@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Gallery from "./Gallery.vue";
+import Gallery from "../Gallery.vue";
 
 export default {
   name: "TutorialSection",
