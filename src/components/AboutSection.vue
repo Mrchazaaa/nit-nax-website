@@ -1,11 +1,11 @@
 <template>
-  <div id="about">
+  <div class="jumbotron" id="about">
     <div class="col-3"></div>
     <div class="col-6">
       <div id="image-container">
         <img src="@/assets/bean.jpeg" />
       </div>
-      <h1>About Us</h1>
+      <h1 class="display-3">About Us</h1>
       <p>NitNax is the creative outlet of Tina Saint. A lifelong knitter & seamstress who loves making affordable, comfortable and stylish one-of-a-knind knitwear.</p>
       <p>Originally making custom knitwear for friends and family, NitNax was born to provide anyone with access to beutiful custom knitwear at an affordable price!</p>
       <p>We also sell other homemade</p>
@@ -23,7 +23,7 @@ export default {
 <style scoped>
 #about {
   display: flex;
-  padding: 20px 10px;
+  margin: 0px;
 }
 img {
   height: 200px;
