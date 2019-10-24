@@ -6,7 +6,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
-      <Gallery />
+      <Gallery id="gallery2" :imgs="[require('@/assets/bean.jpeg'), require('@/assets/bean.jpeg')]"/>
     </div>
 
     <div class="col-3"></div>
@@ -20,6 +20,8 @@ export default {
   name: "TutorialSection",
   components: {
     Gallery
+  },
+  mounted: () => {
   }
 };
 </script>

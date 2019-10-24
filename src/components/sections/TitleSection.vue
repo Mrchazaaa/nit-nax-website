@@ -18,8 +18,8 @@
 export default {
   name: "TitleSection",
   mounted: () => {
-    $("#pink-blob").css({ left: -$("#pink-blob").width() }, 350);
-    $("#pink-blob").animate({ left: "0px" }, 725);
+    window.$("#pink-blob").css({ left: -window.$("#pink-blob").width() }, 350);
+    window.$("#pink-blob").animate({ left: "0px" }, 725);
   }
 };
 </script>

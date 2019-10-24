@@ -23,7 +23,7 @@ export default {
 
 <style>
 body, html {
-  background-color: #F8F9FA !important;
+  background-color: #3E4E50 !important;
   scroll-behavior: smooth;
 }
 </style>

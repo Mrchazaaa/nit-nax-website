@@ -1,60 +1,31 @@
 <template>
-  <div>
-    <gallery :images="images" :index="index" @close="index = null"></gallery>
-    <div
-      class="image"
-      v-for="(image, imageIndex) in images"
-      :key="imageIndex"
-      @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + (image.hasOwnProperty('poster') ? image.poster : image) + ')', width: '300px', height: '200px' }"
-    ></div>
+  <div :id="id">
+    <a v-for="(img, index) in imgs" v-bind:key="id+index" :href="img">
+      <img :src="img" />
+    </a>
   </div>
 </template>
- 
-<script>
-import VueGallery from "vue-gallery";
 
+<script>
 export default {
   name: "Gallery",
   data: function() {
-    return {
-      images: [
-        require("../assets/clothing.png"),
-        require("../assets/clothing.png"),
-        require("../assets/clothing.png"),
-        require("../assets/clothing.png"),
-        {
-          title: "Casting On",
-          href: "https://www.youtube.com/watch?v=rtdd-GJGEpA",
-          type: "text/html",
-          youtube: "rtdd-GJGEpA",
-          poster: "https://img.youtube.com/vi/rtdd-GJGEpA/maxresdefault.jpg"
-        },
-        {
-          title: "Provisional Cast On",
-          href: "https://www.youtube.com/watch?v=rM9GBoYJZxc",
-          type: "text/html",
-          youtube: "rM9GBoYJZxc",
-          poster: "https://img.youtube.com/vi/rM9GBoYJZxc/maxresdefault.jpg"
-        }
-      ],
-      index: null
-    };
+    return {};
   },
-
-  components: {
-    gallery: VueGallery
+  props: {
+    id: String,
+    imgs: Array
+  },
+  mounted: function() {
+    window.lightGallery(document.getElementById(this.id));
   }
 };
-</script> 
- 
-<style scoped>
-.image {
-  float: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: 1px solid #ebebeb;
-  margin: 5px;
+</script>
+
+<style src='lightgallery.js/dist/css/lightgallery.css'></style>
+<style>
+img {
+  width: 200px;
+  height: 200px;
 }
-</style> 
+</style>
