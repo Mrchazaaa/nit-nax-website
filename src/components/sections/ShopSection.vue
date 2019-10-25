@@ -1,7 +1,8 @@
 <template>
   <div class="content-section jarallax" id="shop">
     <div class="col-2"></div>
-    <div class="jumbotron col-8">
+    <div class="col-8">
+    <!-- <div class="jumbotron col-8"> -->
       <h1 class="display-3">Visit Our Shop!</h1>
       <p
         class="lead"
@@ -27,13 +28,17 @@ export default {
   },
   mounted: function() {
     window.jarallax(document.getElementsByClassName("jarallax"), {
-      speed: 0.5
+      // speed: 0.5
+      speed: 0.8
     });
   }
 };
 </script>
 
 <style scoped>
+/* .content-section{
+  margin: 20px;
+} */
 #shop {
   background-image: url("../../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
   display: flex;

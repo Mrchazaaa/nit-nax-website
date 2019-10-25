@@ -1,5 +1,6 @@
 <template>
-  <div class="content-section container-fluid" id="home">
+<div id="add-border">
+  <div class="content-section container-fluid jarallax" id="home">
     <div class="col-12 col-lg-5" style="padding: 0px;">
       <div id="pink-blob">
         <h1>
@@ -12,6 +13,7 @@
     </div>
     <div id="showcase" class="col-7"></div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -20,6 +22,9 @@ export default {
   mounted: () => {
     window.$("#pink-blob").css({ left: -window.$("#pink-blob").width() }, 350);
     window.$("#pink-blob").animate({ left: "0px" }, 725);
+    window.jarallax(document.getElementsByClassName("jarallax"), {
+      speed: 0.5
+    });
   }
 };
 </script>
@@ -51,13 +56,15 @@ export default {
     margin-bottom: 30px;
   }
 }
+#add-border {
+  /* background-color: white; */
+}
 #home {
   background-image: url("../../assets/victoria-bilsborough-nLNimOqmbpg-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 !important;
-  padding-top: 64px !important;
   text-align: center;
   box-sizing: border-box;
   margin-left: 0px !important;
