@@ -1,27 +1,29 @@
 <template>
-  <v-app>
+  <div id="top">
     <Navbar/>
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+    <Content/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Content from './components/Content';
 import Navbar from './components/Navbar';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Content,
     Navbar,
   },
   data: () => ({
-    //
+    
   }),
 };
 </script>
 
 <style>
+body, html {
+  background-color: #3E4E50 !important;
+  scroll-behavior: smooth;
+}
 </style>
