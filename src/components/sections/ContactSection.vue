@@ -1,5 +1,6 @@
 <template>
-  <div class="jumbotron" id="contact">
+  <div class="" id="contact">
+  <!-- <div class="jumbotron" id="contact"> -->
     <div class="col-1 col-lg-3"></div>
     <div class="col-10 col-lg-6">
       <h1 class="display-3">About Us</h1>

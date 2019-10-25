@@ -1,4 +1,5 @@
 <template>
+<div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div id="mobile-nav">
       <button
@@ -34,6 +35,9 @@
       </ul>
     </div>
   </nav>
+  <div id="nav-spacer"></div>
+
+    </div>
 </template>
 
 <script>
@@ -52,6 +56,9 @@ export default {
   #desktop-title {
     display: none;
   }
+}
+#nav-spacer {
+  height: 64px;
 }
 .navbar {
   position: fixed !important;

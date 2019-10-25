@@ -1,5 +1,6 @@
 <template>
-  <div class="jumbotron" id="tutorials">
+  <!-- <div class="jumbotron" id="tutorials"> -->
+  <div class="" id="tutorials">
     <div class="col-3"></div>
     <div class="col-6">
       <h2>Tutorials</h2>

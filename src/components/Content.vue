@@ -2,7 +2,7 @@
   <div class="content">
     <TitleSection />
     <!-- <AboutSection /> -->
-    <div id="spacer"></div>
+    <!-- <div id="spacer"></div> -->
     <ShopSection />
     <TutorialSection />
     <WorkshopSection />
@@ -33,7 +33,8 @@ export default {
 
 <style>
 #spacer {
-  height:50px;
-  background-color: #3E4E50;
+  /* height:500px; */
+  height:10px;
+  /* background-color: #3E4E50; */
 }
 </style>
