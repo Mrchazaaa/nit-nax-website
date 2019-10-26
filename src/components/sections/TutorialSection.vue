@@ -3,7 +3,7 @@
   <div class="" id="tutorials">
     <div class="col-3"></div>
     <div class="col-6">
-      <h2>Tutorials</h2>
+      <h1 class="display-3">Tutorials</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  padding-top: 50px;
+}
 #tutorials {
   margin: 0px;
   display: flex;
