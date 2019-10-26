@@ -6,9 +6,9 @@
       <div id="image-container" class="d-none">
         <img class="" src="@/assets/bean.jpeg" />
       </div>
-      <p>NitNax is the creative outlet of Tina Saint. A lifelong knitter & seamstress who loves making affordable, comfortable and stylish one-of-a-knind knitwear.</p>
-      <p>Originally making custom knitwear for friends and family, NitNax was born to provide anyone with access to beutiful custom knitwear at an affordable price!</p>
-      <p>We also sell other homemade</p>
+      <p>NitNax is the creative outlet of Tina Saint. A lifelong knitter & seamstress who loves making affordable, comfortable and stylish one-of-a-knind knitwear.
+      <br>Feel free to contact us regarding knitting advice, booking a workshop or quotes for custom hand-knitted items.</p>
+      <a href="https://twitter.com/nitnax?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nitnax</a>
     </div>
     <div class="col-0 col-md-1"></div>
   </div>
@@ -34,6 +34,9 @@ export default {
 }
 h1, p {
   color: white;
+}
+h1 {
+  padding-top: 50px;
 }
 img {
   height: 200px;
