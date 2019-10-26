@@ -1,34 +1,20 @@
 <template>
-  <!-- <div :id="id" class="gallery">
-    <a v-for="(img, index) in imgs" v-bind:key="id+index" :href="img" data-sub-html=".caption">
+  <ul :id="id" class="gallery">
+    <li v-for="(img, index) in imgs" v-bind:key="id+index" :data-src="img" data-sub-html=".caption">
       <img :src="img" />
-        require('@/assets/IMG_3830.jpg')]"/>
       <div class="caption">
         <h4>Caption1</h4>
         <p>Desc1</p>
       </div>
-    </a>
-  </div>-->
-
-  <div class="gallery-container">
-    <ul :id="id" class="gallery">
-      <li v-for="(img, index) in imgs" v-bind:key="id+index" :data-src="img" data-sub-html=".caption">
-        <img :src="img" />
-        <div class="caption">
-          <h4>Caption1</h4>
-          <p>Desc1</p>
-        </div>
-      </li>
-    </ul>
-  </div>
+    </li>
+  </ul>
 </template>
 
 <script>
 export default {
   name: "Gallery",
   data: function() {
-    return {
-    };
+    return {};
   },
   props: {
     id: String,
@@ -43,21 +29,10 @@ export default {
 </script>
 
 <style src='lightgallery.js/dist/css/lightgallery.css'></style>
-<style>
-#gallery-container {
-  display: flex;
-  justify-content: center;
-}
+<style scoped>
 .gallery {
   list-style: none;
-}
-#relative-caption {
-  width: 100%;
-  max-width: 1200px;
-  display: inline-block;
-  padding: 0 !important;
-  text-align: center;
-  margin: 0 auto !important;
+  padding: 0px !important;
 }
 .caption {
   margin-top: 15px;
@@ -68,8 +43,8 @@ li {
   float: left;
   cursor: pointer;
 }
-img {
-  width: 100%;
+li img {
+  width: 100% !important ;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

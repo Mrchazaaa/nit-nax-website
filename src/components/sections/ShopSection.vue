@@ -1,14 +1,9 @@
 <template>
   <div class="content-section jarallax" id="shop">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <h1 class="display-3">Some of Our Previous Work</h1>
+    <div class="col-0 col-md-1"></div>
+    <div class="col-12 col-md-10">
+      <h1 class="display-3">Portfolio</h1>
       <Gallery id="gallery1" :imgs="[
-        require('@/assets/IMG_3830.jpg'), 
-        require('@/assets/IMG_3830.jpg'), 
-        require('@/assets/IMG_3830.jpg'), 
-        require('@/assets/IMG_3830.jpg'), 
-        require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
@@ -18,7 +13,7 @@
         require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg')]"/>
     </div>
-    <div class="col-1"></div>
+    <div class="col-0 col-md-1"></div>
   </div>
 </template>
 
@@ -41,10 +36,9 @@ div[class*="col"] {
 }
 h1, p {
   margin-top: 50px;
-  text-align: center;
-  /* color: white; */
   font-size: 3rem; 
   margin-bottom: 25px;
+  font-weight: bold;
 }
 #shop {
   /* background-image: url("../../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg"); */

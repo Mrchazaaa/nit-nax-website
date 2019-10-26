@@ -3,9 +3,9 @@
     <TitleSection />
     <!-- <div id="spacer"></div> -->
     <ShopSection />
+    <WorkshopSection />
     <AboutSection />
     <TutorialSection />
-    <WorkshopSection />
     <ContactSection />
   </div>
 </template>
