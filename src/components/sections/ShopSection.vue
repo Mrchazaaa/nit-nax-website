@@ -3,10 +3,11 @@
     <div class="col-0 col-md-1"></div>
     <div class="col-12 col-md-10">
       <h1 class="display-3">Portfolio</h1>
+      <p class="lead">Checkout some of our previous work </p>
       <Gallery id="gallery1" :imgs="[
+        require('@/assets/pillow.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
-        require('@/assets/IMG_3830.jpg'), 
-        require('@/assets/IMG_3830.jpg'), 
+        require('@/assets/mittens.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg'), 
@@ -34,21 +35,18 @@ export default {
 div[class*="col"] {
   padding: 0px;
 }
-h1, p {
-  margin-top: 50px;
-  font-size: 3rem; 
-  margin-bottom: 25px;
+.content-section {
+  padding-top: 50px !important;
+}
+h1 {
   font-weight: bold;
+  font-size: 3rem; 
 }
 #shop {
-  /* background-image: url("../../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg"); */
   display: flex;
   padding: 20px 30px;
-  /* height: 700px; */
 }
 .jumbotron {
-  /* position: relative; */
-  /* top: -400px; */
   display: inline-block !important;
   height: 1000px;
 }
