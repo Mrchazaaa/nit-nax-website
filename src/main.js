@@ -1,10 +1,16 @@
 import 'bootstrap'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@/assets/css/bootstrap.min.css';1
+import '@/assets/css/bootstrap.min.css';
 import Vue from 'vue'
 import App from '@/App.vue'
+import _ from 'lodash';
+import $ from 'jquery';
+
+window.$ = window.jQuery = $;
+window._ = _;
 
 require('lightgallery.js');
+
 import {
   jarallax,
   jarallaxElement,

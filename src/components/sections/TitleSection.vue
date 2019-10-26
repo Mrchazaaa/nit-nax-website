@@ -32,7 +32,7 @@ export default {
 <style scoped>
 @media only screen and (max-height: 600px) {
   .content-section {
-    height: 100vh !important;
+    height: calc(100vh - 64px) !important;
   }
 }
 @media only screen and (min-height: 601px) {
@@ -72,8 +72,15 @@ export default {
   display: flex;
   justify-content: center;
 }
+/* ================================================================ */
+@font-face {
+  font-family: 'selima';
+  src: url('../../assets/selima-font/selima_.otf'); /* IE9 Compat Modes */
+}
+/* ================================================================ */
 h1 {
-  font-family: "Kaushan Script", cursive !important;
+  /* font-family: "Kaushan Script", cursive !important; */
+  font-family: 'selima', Fallback, "Kaushan Script";
   color: white;
   text-align: center;
   font-size: 6vmax;

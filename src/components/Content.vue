@@ -1,9 +1,9 @@
 <template>
   <div class="content">
     <TitleSection />
-    <!-- <AboutSection /> -->
     <!-- <div id="spacer"></div> -->
     <ShopSection />
+    <AboutSection />
     <TutorialSection />
     <WorkshopSection />
     <ContactSection />
@@ -12,8 +12,8 @@
 
 <script>
 import TitleSection from "./sections/TitleSection.vue";
-// import AboutSection from "./sections/AboutSection.vue";
 import ShopSection from "./sections/ShopSection.vue";
+import AboutSection from "./sections/AboutSection.vue";
 import TutorialSection from "./sections/TutorialSection.vue";
 import WorkshopSection from "./sections/WorkshopSection.vue";
 import ContactSection from "./sections/ContactSection.vue";
@@ -22,7 +22,7 @@ export default {
   name: "Content",
   components: {
     TitleSection,
-    // AboutSection,
+    AboutSection,
     ShopSection,
     TutorialSection,
     WorkshopSection,
@@ -33,8 +33,7 @@ export default {
 
 <style>
 #spacer {
-  /* height:500px; */
-  height:10px;
+  height:500px;
   /* background-color: #3E4E50; */
 }
 </style>
