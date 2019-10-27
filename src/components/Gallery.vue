@@ -53,6 +53,7 @@ li {
 }
 li img {
   width: 100% !important ;
+  height: 300px !important;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

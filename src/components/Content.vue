@@ -33,4 +33,7 @@ export default {
   max-width: 1000px !important;
 
 }
+#content-container /deep/ .content-section {
+  padding: 50px 30px;
+}
 </style>

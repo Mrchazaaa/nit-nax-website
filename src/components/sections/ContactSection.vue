@@ -1,5 +1,5 @@
 <template>
-  <div class="jarallax d-flex" id="contact">
+  <div class="jarallax d-flex content-section" id="contact">
     <div class="flex-fill"></div>
     <div class="col-12 col-md-10 col-container">
       <h1 class="display-3">About Us</h1>
@@ -49,8 +49,5 @@ img {
   display: flex;
   align-items: center;
   height: 100%;
-}
-.col-container {
-  /* max-width: 1000px !important; */
 }
 </style>

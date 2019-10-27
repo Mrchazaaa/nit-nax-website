@@ -1,6 +1,6 @@
 <template>
   <!-- <div class="jumbotron" id="tutorials"> -->
-  <div class="d-flex" id="tutorials">
+  <div class="content-section d-flex" id="tutorials">
     <div class="flex-fill"></div>
     <div class="col-12 col-md-10 col-container">
       <h1 class="display-3">Tutorials</h1>

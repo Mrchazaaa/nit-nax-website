@@ -8,7 +8,9 @@
           <br />Sale
         </h1>
         <p>Handcrafted & stylish</p>
-        <button type="button" class="btn btn-primary btn-lg">Shop</button>
+        <a href="https://www.etsy.com/shop/NitNaxShop">
+        <button id="nice-button" type="button" class="btn btn-primary btn-lg"><span>Shop </span></button>
+        </a>
       </div>
     </div>
     <div id="showcase" class="col-7"></div>
@@ -30,13 +32,54 @@ export default {
 </script>
 
 <style scoped>
+
+/* ----------------------------- */
+
+#nice-button {
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#nice-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#nice-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#nice-button:hover span {
+  padding-right: 25px;
+}
+
+#nice-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* ----------------------------- */
+
 @media only screen and (max-height: 600px) {
-  .content-section {
+  #home {
     height: calc(100vh - 64px) !important;
   }
 }
 @media only screen and (min-height: 601px) {
-  .content-section {
+  #home {
     height: 600px !important;
   }
 }
