@@ -37,9 +37,17 @@ export default {
 .caption {
   margin-top: 15px;
 }
+.caption p {
+  margin-bottom: 10px;
+}
+ul {
+  margin-left: -10px;
+  margin-right: -10px;
+}
 li {
-  width: calc(50% - 60px);
-  margin: 30px;
+  width: calc(50% - 20px);
+  /* margin: 10px 30px; */
+  margin: 10px 10px;
   float: left;
   cursor: pointer;
 }
@@ -53,7 +61,7 @@ li img {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   li {
-    width: calc(33% - 60px);
+    width: calc(33% - 20px);
   }
 }
 
@@ -64,7 +72,7 @@ li img {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   li {
-    width: calc(25% - 60px);
+    width: calc(25% - 20px);
   }
 }
 </style>

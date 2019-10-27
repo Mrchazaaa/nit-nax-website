@@ -1,7 +1,7 @@
 <template>
-  <div class="jarallax" id="contact">
-    <div class="col-0 col-md-1"></div>
-    <div class="col-12 col-md-10">
+  <div class="jarallax d-flex" id="contact">
+    <div class="flex-fill"></div>
+    <div class="col-12 col-md-10 col-container">
       <h1 class="display-3">About Us</h1>
       <div id="image-container" class="d-none">
         <img class="" src="@/assets/bean.jpeg" />
@@ -10,7 +10,7 @@
       <br>Feel free to contact us regarding knitting advice, booking a workshop or quotes for custom hand-knitted items.</p>
       <a href="https://twitter.com/nitnax?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nitnax</a>
     </div>
-    <div class="col-0 col-md-1"></div>
+    <div class="flex-fill"></div>
   </div>
 </template>
 
@@ -49,5 +49,8 @@ img {
   display: flex;
   align-items: center;
   height: 100%;
+}
+.col-container {
+  /* max-width: 1000px !important; */
 }
 </style>

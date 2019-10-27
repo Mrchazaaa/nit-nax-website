@@ -1,29 +1,43 @@
 <template>
   <!-- <div class="jumbotron" id="tutorials"> -->
-  <div class="" id="tutorials">
-    <div class="col-3"></div>
-    <div class="col-6">
+  <div class="d-flex" id="tutorials">
+    <div class="flex-fill"></div>
+    <div class="col-12 col-md-10 col-container">
       <h1 class="display-3">Tutorials</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
-      <Gallery id="gallery2" :imgs="[require('@/assets/bean.jpeg'), require('@/assets/bean.jpeg')]"/>
-    </div>
 
-    <div class="col-3"></div>
+      <!-- cast on -->
+      <iframe
+        width="1905"
+        
+        src="https://www.youtube.com/embed/rtdd-GJGEpA"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <!-- provisional cast on -->
+      <iframe
+        width="1905"
+        
+        src="https://www.youtube.com/embed/rM9GBoYJZxc"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="flex-fill"></div>
   </div>
 </template>
 
 <script>
-import Gallery from "../Gallery.vue";
-
 export default {
   name: "TutorialSection",
   components: {
-    Gallery
   },
-  mounted: () => {
-  }
+  mounted: () => {}
 };
 </script>
 
@@ -34,5 +48,11 @@ h1 {
 #tutorials {
   margin: 0px;
   display: flex;
+}
+iframe {
+  /* height: auto; */
+  width: 50%;
+  min-width: 0px !important;
+  padding: 10px;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="content-section jarallax" id="workshops">
-    <div class="col-0 col-md-1"></div>
-    <div class="jumbotron col-12 col-md-10">
+  <div class="content-section jarallax d-flex" id="workshops">
+    <div class="flex-fill"></div>
+    <div class="jumbotron col-12 col-md-10 col-container">
       <h1 class="display-3">Workshops</h1>
       <p
         class="lead"
@@ -11,7 +11,7 @@
       <hr class="my-4" />
       <Gallery id="gallery3" :imgs="[require('@/assets/bean.jpeg'), require('@/assets/bean.jpeg'), require('@/assets/bean.jpeg')]"/>
     </div>
-    <div class="col-0 col-md-1"></div>
+    <div class="flex-fill"></div>
   </div>
 </template>
 

@@ -26,7 +26,6 @@ body, html {
   /* background-color: #353839 !important; */
   /* background-color: #D3D1D4 !important; */
   background-color: white !important;
-
   
   scroll-behavior: smooth;
 }

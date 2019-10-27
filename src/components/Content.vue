@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div id="content-container">
     <TitleSection />
     <ShopSection />
     <WorkshopSection />
@@ -28,4 +28,9 @@ export default {
 </script>
 
 <style>
+#content-container /deep/ .col-container {
+  padding-bottom: 50px !important; 
+  max-width: 1000px !important;
+
+}
 </style>

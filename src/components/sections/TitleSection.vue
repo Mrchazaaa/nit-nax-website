@@ -56,9 +56,6 @@ export default {
     margin-bottom: 30px;
   }
 }
-#add-border {
-  /* background-color: white; */
-}
 #home {
   background-image: url("../../assets/victoria-bilsborough-nLNimOqmbpg-unsplash.jpg");
   background-position: center;

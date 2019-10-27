@@ -1,7 +1,7 @@
 <template>
-  <div class="content-section jarallax" id="shop">
-    <div class="col-0 col-md-1"></div>
-    <div class="col-12 col-md-10">
+  <div class="content-section jarallax d-flex" id="shop">
+    <div class="flex-fill"></div>
+    <div class="col-12 col-md-10 col-container">
       <h1 class="display-3">Portfolio</h1>
       <p class="lead">Checkout some of our previous work </p>
       <Gallery id="gallery1" :imgs="[
@@ -14,7 +14,7 @@
         require('@/assets/IMG_3830.jpg'), 
         require('@/assets/IMG_3830.jpg')]"/>
     </div>
-    <div class="col-0 col-md-1"></div>
+    <div class="flex-fill"></div>
   </div>
 </template>
 
@@ -32,9 +32,6 @@ export default {
 </script>
 
 <style scoped>
-div[class*="col"] {
-  padding: 0px;
-}
 .content-section {
   padding-top: 50px !important;
 }
