@@ -11,7 +11,6 @@
       <!-- cast on -->
       <iframe
         width="1905"
-        
         src="https://www.youtube.com/embed/rtdd-GJGEpA"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -21,7 +20,6 @@
       <!-- provisional cast on -->
       <iframe
         width="1905"
-        
         src="https://www.youtube.com/embed/rM9GBoYJZxc"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -35,24 +33,24 @@
 <script>
 export default {
   name: "TutorialSection",
-  components: {
-  },
+  components: {},
   mounted: () => {}
 };
 </script>
 
-<style scoped>
-h1 {
-  padding-top: 50px;
-}
+<style lang="scss">
 #tutorials {
   margin: 0px;
   display: flex;
-}
-iframe {
-  /* height: auto; */
-  width: 50%;
-  min-width: 0px !important;
-  padding: 10px;
+
+  h1 {
+    padding-top: 50px;
+  }
+  iframe {
+    /* height: auto; */
+    width: 50%;
+    min-width: 0px !important;
+    padding: 10px;
+  }
 }
 </style>
