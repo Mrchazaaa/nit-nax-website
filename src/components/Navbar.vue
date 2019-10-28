@@ -27,7 +27,7 @@
           </li>
           <li class="nav-item">
             <a href="#top">
-              <h1 id="desktop-title">NitNax</h1>
+              <h1 id="desktop-title" class="nav-link">NitNax</h1>
             </a>
           </li>
           <li class="nav-item">
@@ -79,9 +79,18 @@ export default {
   #mobile-nav {
     width: 100%;
   }
+  a {
+    text-align: center !important;
+    // display: flex !important;
+    // justify-content: center !important;
+  }
   button {
     position: absolute;
     // top: 10px;
+  }
+  ul {
+    // display: inline !important;
+    // width: 30% !important;
   }
   li {
     margin: 0 10px;

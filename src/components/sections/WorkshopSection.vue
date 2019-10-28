@@ -42,9 +42,8 @@ export default {
   background-image: url("../../assets/jean-marc-vieregge-cDKqFb-NOZc-unsplash.jpg");
   display: flex;
   padding: 20px 30px;
-
-  .jumbotron {
-    margin: 0;
+  h2, h4, p {
+    color: white;
   }
 }
 </style>

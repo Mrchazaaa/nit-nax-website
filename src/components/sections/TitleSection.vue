@@ -16,7 +16,7 @@
         </a>
       </div>
       <div id="showcase" class="col-md-7">
-        <p>hello</p>
+        <img src="@/assets/pot.jpg" />
       </div>
     </div>
   </div>
@@ -67,13 +67,16 @@ export default {
     justify-content: center;
   }
   #showcase {
+    display: inline-block;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    // background-color: purple;
-    display: none;
-  }
 
+    img {
+      height: 75%;
+    }
+  }
   h1 {
     font-family: "selima", Fallback, "Kaushan Script" !important;
     text-align: center;
@@ -88,6 +91,7 @@ export default {
   button {
     transition: all 0.5s;
     cursor: pointer;
+    // height: 200%;
     min-width: 200px !important;
   }
 
@@ -113,9 +117,7 @@ export default {
     right: 0;
   }
 
-  #showcase {
-    // display: none;
-  }
+  
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -127,7 +129,10 @@ export default {
     height: 50vh !important;
   }
   #showcase {
-    display: inline-block !important;
+    // display: inline-block !important;
+    // background-color: red;
+    // display: flex;
+    // justify-content: center;
   }
   #pink-blob {
     background-image: url("../../assets/pinkOffset.svg") !important;
