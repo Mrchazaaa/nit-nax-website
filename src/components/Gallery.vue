@@ -24,12 +24,17 @@ export default {
     window.lightGallery(document.getElementById(this.id), {
       subHtmlSelectorRelative: true
     });
-
+    this.resizeGalleryImgs();
     window.$(window).resize(function() {
-      window.$(".gallery-images").each(function () {
-        window.$(this).height( window.$(this).width() * (4/3) );
-      });
+      this.resizeGalleryImgs();
     });
+  },
+  methods: {
+    resizeGalleryImgs: function() {
+      window.$(".gallery-images").each(function() {
+        window.$(this).height(window.$(this).width() * (4 / 3));
+      });
+    }
   }
 };
 </script>
@@ -60,7 +65,6 @@ export default {
     width: 100% !important ;
     // height: 300px !important;
     height: calc(width) !important;
-
   }
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {

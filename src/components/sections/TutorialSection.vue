@@ -34,7 +34,19 @@
 export default {
   name: "TutorialSection",
   components: {},
-  mounted: () => {}
+  mounted: function() {
+    this.resizeYoutubeThumbnails();
+    window.$(window).resize(function() {
+      this.resizeYoutubeThumbnails();
+    });
+  },
+  methods: {
+    resizeYoutubeThumbnails: function() {
+      window.$("iframe").each(function() {
+        window.$(this).height(window.$(this).width() * (9 / 16));
+      });
+    }
+  }
 };
 </script>
 

@@ -53,6 +53,7 @@ export default {
     height: 100%;
     width: 100%;
     margin: 0px;
+    padding: 10px;
   }
 
   #pink-blob {
@@ -105,8 +106,6 @@ export default {
     opacity: 1;
     right: 0;
   }
-
-  
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -116,24 +115,29 @@ export default {
 @media only screen and (min-width: 768px) {
   #home {
     height: 50vh !important;
-  }
-  #showcase {
-    display: inline-block;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 100%;
 
-    img {
-      height: 75%;
+    .row {
+      padding: 0px;
     }
-  }
-  #pink-blob {
-    background-image: url("../../assets/pinkOffset.svg") !important;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    padding: 0px;
+
+    #showcase {
+      display: inline-block;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      height: 100%;
+
+      img {
+        height: 75%;
+      }
+    }
+    #pink-blob {
+      background-image: url("../../assets/pinkOffset.svg") !important;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      padding: 0px;
+    }
   }
 }
 // Large devices (desktops, 992px and up)

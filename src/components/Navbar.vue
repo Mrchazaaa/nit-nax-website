@@ -65,6 +65,12 @@ export default {
       display: none;
     }
   }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
   button span {
     height: 25px !important;
   }

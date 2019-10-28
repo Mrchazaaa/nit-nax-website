@@ -34,7 +34,7 @@ html {
 @media only screen and (min-width: 576px) {
   body,
   html {
-    /* background-color: red !important; */
+    /* background-color: red !impxortant; */
     /* font-size: 1rem; */
   }
 }

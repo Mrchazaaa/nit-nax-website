@@ -33,3 +33,7 @@ Photo by Soraya García on Unsplash
 Photo by Jean-Marc Vieregge on Unsplash
 Photo by Kelly Sikkema on Unsplash
 Photo by Ursula Castillo on Unsplash
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a></div>
