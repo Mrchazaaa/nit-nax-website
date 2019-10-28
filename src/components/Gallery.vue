@@ -1,7 +1,7 @@
 <template>
   <ul :id="id" class="gallery">
     <li v-for="(img, index) in imgs" v-bind:key="id+index" :data-src="img" data-sub-html=".caption">
-      <img :src="img" />
+      <img class="gallery-images" :src="img" />
       <div class="caption">
         <h4>Caption1</h4>
         <p>Desc1</p>
@@ -23,6 +23,12 @@ export default {
   mounted: function() {
     window.lightGallery(document.getElementById(this.id), {
       subHtmlSelectorRelative: true
+    });
+
+    window.$(window).resize(function() {
+      window.$(".gallery-images").each(function () {
+        window.$(this).height( window.$(this).width() * (4/3) );
+      });
     });
   }
 };
@@ -52,7 +58,9 @@ export default {
   }
   li img {
     width: 100% !important ;
-    height: 300px !important;
+    // height: 300px !important;
+    height: calc(width) !important;
+
   }
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
