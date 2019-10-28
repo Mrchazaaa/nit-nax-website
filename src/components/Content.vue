@@ -57,7 +57,6 @@ div[class*="col-"] {
 h1 {
   font-size: 4rem;
   line-height: 0.8;
-
 }
 h2 {
   font-weight: bold;

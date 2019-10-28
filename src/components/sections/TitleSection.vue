@@ -15,7 +15,7 @@
           </button>
         </a>
       </div>
-      <div id="showcase" class="col-md-7">
+      <div id="showcase" class="d-none d-md-block col-md-7">
         <img src="@/assets/pot.jpg" />
       </div>
     </div>
@@ -65,17 +65,6 @@ export default {
 
     align-items: center;
     justify-content: center;
-  }
-  #showcase {
-    display: inline-block;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 100%;
-
-    img {
-      height: 75%;
-    }
   }
   h1 {
     font-family: "selima", Fallback, "Kaushan Script" !important;
@@ -129,10 +118,15 @@ export default {
     height: 50vh !important;
   }
   #showcase {
-    // display: inline-block !important;
-    // background-color: red;
-    // display: flex;
-    // justify-content: center;
+    display: inline-block;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+
+    img {
+      height: 75%;
+    }
   }
   #pink-blob {
     background-image: url("../../assets/pinkOffset.svg") !important;
