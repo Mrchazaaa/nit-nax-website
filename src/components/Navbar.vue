@@ -20,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#shop">Shop</a>
+            <a class="nav-link" href="#shop">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tutorials">Tutorials</a>
+            <a class="nav-link" href="#workshops">Workshops</a>
           </li>
           <li class="nav-item">
             <a href="#top">
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#workshops">Workshops</a>
+            <a class="nav-link" href="#tutorials">Tutorials</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -39,7 +39,7 @@
         </ul>
       </div>
     </nav>
-    <div id="nav-spacer"></div>
+    <!-- <div id="nav-spacer"></div> -->
   </div>
 </template>
 
@@ -51,6 +51,10 @@ export default {
 
 <style lang="scss">
 #navcont {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+
   @media screen and (min-width: 992px) {
     #mobile-nav {
       display: none;
@@ -61,11 +65,14 @@ export default {
       display: none;
     }
   }
+  button span {
+    height: 25px !important;
+  }
   #nav-spacer {
-    height: 80px;
+    height: 70px;
   }
   .navbar {
-    position: fixed !important;
+    // position: fixed !important;
     width: 100%;
     z-index: 1;
   }
@@ -74,21 +81,25 @@ export default {
   }
   button {
     position: absolute;
-    top: 12px;
+    // top: 10px;
   }
   li {
     margin: 0 10px;
   }
   .navbar-nav {
     width: 100%;
-    align-items: center;
+    // align-items: center;
     display: flex;
     justify-content: center;
   }
   h1 {
+    width: 100%;
     color: white !important;
     margin-bottom: 0px !important;
-    text-align: center;
+    text-align: center !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2.25rem;
   }
 }
 </style>

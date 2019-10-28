@@ -2,7 +2,7 @@
   <div class="jarallax d-flex content-section" id="contact">
     <div class="flex-fill"></div>
     <div class="col-12 col-md-10 col-container">
-      <h1 class="display-3">About Us</h1>
+      <h2>About Us</h2>
       <div id="image-container" class="d-none">
         <img class src="@/assets/bean.jpeg" />
       </div>
@@ -36,7 +36,7 @@ export default {
   display: flex;
   margin: 0px;
   background-image: url("../../assets/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
-  h1,
+  h2,
   p {
     color: white;
   }

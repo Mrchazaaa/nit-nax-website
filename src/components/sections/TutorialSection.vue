@@ -3,7 +3,7 @@
   <div class="content-section d-flex" id="tutorials">
     <div class="flex-fill"></div>
     <div class="col-12 col-md-10 col-container">
-      <h1 class="display-3">Tutorials</h1>
+      <h2>Tutorials</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sit vitae iste totam, sequi cum, atque natus nobis quasi pariatur dignissimos dolorem tempore fugit dolor ducimus quod doloremque alias?</p>

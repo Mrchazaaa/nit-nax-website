@@ -2,7 +2,7 @@
   <div class="content-section jarallax d-flex" id="shop">
     <div class="flex-fill"></div>
     <div class="col-12 col-md-10 col-container">
-      <h1 class="display-3">Products</h1>
+      <h2>Products</h2>
       <p class="lead">Checkout some of our previous work</p>
       <Gallery
         id="gallery1"
@@ -35,9 +35,9 @@ export default {
 
 <style lang="scss">
 #shop {
-  h1 {
+  h2 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 </style>

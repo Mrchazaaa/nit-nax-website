@@ -1,8 +1,8 @@
 <template>
   <div class="content-section jarallax d-flex" id="workshops">
     <div class="flex-fill"></div>
-    <div class="jumbotron col-12 col-md-10 col-container">
-      <h1 class="display-3">Workshops</h1>
+    <div class="col-12 col-md-10 col-container">
+      <h2>Workshops</h2>
       <p class="lead">
         We also provide knitting workshops and beginner classes at various venues across the UK.
         If you are interested in hosting/attending one of these workshops, please contact us at:
@@ -42,6 +42,7 @@ export default {
   background-image: url("../../assets/jean-marc-vieregge-cDKqFb-NOZc-unsplash.jpg");
   display: flex;
   padding: 20px 30px;
+
   .jumbotron {
     margin: 0;
   }
